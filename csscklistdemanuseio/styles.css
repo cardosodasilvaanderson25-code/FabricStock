@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* --- CABEÇALHO CENTRALIZADO --- */
+.topo-site {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #3f574e;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column; /* Logo em cima, título embaixo */
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-principal {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Alinha o ícone da prancheta ao lado do H1 */
+.titulo-com-icone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.mini-icone-prancheta {
+    width: 35px;
+    height: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* --- GRID DE ITENS CENTRALIZADO --- */
+.container-grid {
+    display: grid;
+    /* repeat(2, auto) garante que as colunas ocupem apenas o necessário e centralizem */
+    grid-template-columns: repeat(2, auto); 
+    justify-content: center; 
+    gap: 40px 30px; 
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-checklist {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* O Quadrado Verde (Estilo Neo-Brutalismo) */
+.quadrado-verde {
+    background-color: #9DB093;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0px #000;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.quadrado-verde img {
+    width: 150%;
+    height: auto;
+}
+
+/* O Botão Branco (Pílula) */
+.botao-branco {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 12px 25px;
+    min-width: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 5px 5px 0px #000;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.1s;
+}
+
+/* Efeito de clique em ambos */
+.botao-branco:active, 
+.quadrado-verde:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px #000;
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-site {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #3f574e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Altura fixa para o topo */
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+/* MENU INFERIOR FIXO */
+.menu-inferior {
+    position: fixed;
+    bottom: 50px; /* Aumente este valor para subir mais os ícones */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    z-index: 100; /* Garante que fiquem na frente de tudo */
+}
+
+.container-icones {
+    display: flex;
+    flex-direction: row;
+    /* Reduzi um pouco o gap para caber em telas padrão, ajuste se necessário */
+    gap: 300px; 
+}
+
+.icone-btn {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Este é o tamanho exclusivo para os dois ícones que você quer aumentar */
+.icone-meio {
+    width: 400px !important; /* O !important garante que este tamanho vença o outro */
+}
+
+.icone-btn:hover {
+    transform: translateY(-10px); /* Efeito de subir ao passar o mouse */
+}
+
+.container-central {
+    display: flex;          /* Ativa o modo flexível */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center;     /* Alinha verticalmente (se houver altura) */
+    gap: 130px;              /* Espaço entre os dois ícones */
+    width: 100%;            /* Ocupa a largura toda para o centro ser real */
+    margin-top: 100px;       /* Espaço em relação ao que vem acima */
+}
+
+/* Opcional: Se quiser que eles fiquem um abaixo do outro em telas menores */
+@media (max-width: 600px) {
+    .container-central {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Organiza a imagem e o texto um em cima do outro */
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estiliza o texto que acabou de adicionar */
+.descricao-icone {
+    margin-top: -10px; /* Espaço entre a imagem e o texto */
+    font-size: 25px;
+    color: #4a5d4e; /* Um tom de verde escuro para combinar com os ícones */
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Garante que os itens fiquem lado a lado no footer */
+.container-icones {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os botões */
+}

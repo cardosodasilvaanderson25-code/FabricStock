@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Cor de fundo leve para o resto do site */
+}
+
+.topo-site {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #3f574e;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 150px;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    max-width: 250px;
+    height: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+/* Centralização do Login no meio da tela abaixo do verde */
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Ocupa o espaço restante da tela */
+    padding: 10px;
+}
+
+.form-caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    /* ADICIONE ISSO PARA SUBIR A CAIXA */
+    margin-top: -200px; 
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: sans-serif;
+    color: #3f574e;
+    font-weight: bold;
+}
+
+/* Wrapper para colocar o olho dentro do input */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Espaço para o olho */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.olhinho {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.botao-enviar {
+    background-color: #3f574e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #2d3f38;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Cor de fundo leve para o resto do site */
+}
+
+.topo-site {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #3f574e;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 150px;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    max-width: 250px;
+    height: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+/* Centralização do Login no meio da tela abaixo do verde */
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Ocupa o espaço restante da tela */
+    padding: 20px;
+}
+
+.form-caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: sans-serif;
+    color: #3f574e;
+    font-weight: bold;
+}
+
+/* Wrapper para colocar o olho dentro do input */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Espaço para o olho */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.olhinho {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.botao-enviar {
+    background-color: #3f574e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #2d3f38;
+}
+

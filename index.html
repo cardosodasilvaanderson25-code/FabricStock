@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrick Stock</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="topo-site">
+        <div class="container-logo">
+            <img src="Fotologotipo/LogoFabrickStock.png" alt="Logotipo FabrickStock" class="logo">
+            <h1>Fabrick Stock</h1>
+        </div>
+    </header>
+
+    <main class="area-login">
+        <!-- O form deve envolver todos os campos e o botão -->
+       <form action="page.html" method="GET" class="form-caixa">
+    <div class="campo">
+        <label for="Nome">Nome:</label>
+        <input type="text" name="Nome" id="Nome" required>
+    </div>
+
+    <div class="campo">
+        <label for="Senha">Senha:</label>
+        <div class="input-wrapper" style="position: relative; display: flex; align-items: center;">
+            <input type="password" name="Senha" id="Senha" required style="width: 100%;">
+            <span id="togglePassword" class="olhinho" style="position: absolute; right: 10px; cursor: pointer;">👁️</span>
+        </div>
+    </div>
+
+    <input type="submit" value="Entrar" class="botao-enviar">
+</form>
+
+        
+    </main>
+
+    <!-- Chamada do seu arquivo JavaScript -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
